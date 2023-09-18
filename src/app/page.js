@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import './fonts.css';
 import HeroSection from './components/HeroSection';
 export default function Home() {
   const gradientBackground = {

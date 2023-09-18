@@ -1,15 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<style type="text/css">
-	.st0{font-family:'TRON';}
-	.st1{font-size:200px;}
-	.st2{fill:none;stroke:#000000;stroke-width:15;}
-</style>
-<text transform="matrix(1 0 0 1 41.0067 304.1304)" class="st0 st1">T</text>
-<text transform="matrix(1 0 0 1 41.0067 304.1304)" class="st2 st0 st1">T</text>
-<text transform="matrix(1 0 0 1 163.1747 304.1304)" class="st0 st1"> </text>
-<text transform="matrix(1 0 0 1 211.2571 344.1304)" class="st0 st1">R</text>
-<text transform="matrix(1 0 0 1 211.2571 344.1304)" class="st2 st0 st1">R</text>
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            @font-face {
+                font-family: 'CustomFont';
+                src: url('tron.woff2') format('woff2'),
+                    url('tron.woff') format('woff');
+            }
+        </style>
+        <linearGradient id="fillGradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#411df5" />
+            <stop offset="100%" stop-color="#00b7ff" />
+        </linearGradient>
+        <linearGradient id="borderGradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="red" />
+            <stop offset="100%" stop-color="#4a0000" />
+        </linearGradient>
+        <linearGradient id="purpleBorderGradient" gradientTransform="rotate(90)">
+            <!-- Cambia los colores aquí para el gradiente de borde morado de la "R" -->
+            <stop offset="0%" stop-color="#a563ff" /> <!-- Morado claro -->
+            <stop offset="100%" stop-color="#411df5" /> <!-- Morado oscuro -->
+        </linearGradient>
+    </defs>
+
+    <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="CustomFont" font-size="200">
+        <!-- Aplicamos el gradiente rojo al borde de la "T" -->
+        <tspan x="40%" dy="45" fill="url(#fillGradient)" stroke="url(#borderGradient)" stroke-width="15" paint-order="stroke fill">T</tspan>
+        <!-- Aplicamos el gradiente azul al relleno de la "R" y el gradiente morado al borde de la "R" -->
+        <tspan x="70%" dy="40" font-size="200" fill="url(#fillGradient)" stroke="url(#purpleBorderGradient)" stroke-width="15" paint-order="stroke fill">R</tspan>
+    </text>
 </svg>
