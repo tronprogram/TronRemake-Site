@@ -7,20 +7,6 @@ const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
-    images: [
-      {
-        src: "/image/about-image.png",
-        alt: "Skills Imagen 1",
-        width: 900,
-        height: 900,
-      },
-      {
-        src: "/image/skills-image2.png",
-        alt: "Skills Imagen 2",
-        width: 400,
-        height: 400,
-      },
-    ],
     content: (
       <ul className="list-disc pl-2">
         <li>Experimenta la emoción de las batallas de motos de luz, los enfrentamientos de tanques y las estrategias en las torres I/O en un solo juego.</li>
@@ -34,45 +20,23 @@ const TAB_DATA = [
   {
     title: "Education",
     id: "education",
-    images: [
-      {
-        src: "/image/education-image1.png",
-        alt: "Education Imagen 1",
-        width: 400,
-        height: 400,
-      },
-    ],
     content: (
       <ul className="list-disc pl-2">
         <li>Motos de Luz:
 
-En el emocionante minijuego de &quot;Motos de Luz&quot;, los jugadores se suben a las icónicas motos de luz y compiten en una carrera mortal. Esquiva los obstáculos que se encuentran en la pista y planifica tus movimientos con cuidado para cortarles el paso. La velocidad y la agilidad son esenciales para sobrevivir y ser el último en pie en la cuadrícula digital.</li>
-<li>Tanques de Luz: El minijuego de &quot;Tanques&quot; te sumerge en un enfrentamiento de alta tecnología. Controla un tanque futurista y utiliza proyectiles láser para destruir a tus oponentes. la estrategia es crucial mientras te abres paso a través de la cuadrícula digital, disparando a los enemigos y evitando sus ataques. </li>
-<li>Caza de Gridbugs:
-En el minijuego de &quot;Caza de Gridbugs&quot;, te embarcarás en una misión para eliminar a las plagas digitales conocidas como gridbugs. Estas criaturas digitales se mueven y multiplican rápidamente y representan una amenaza para la estabilidad de la cuadrícula. Utiliza tus habilidades de caza y captura a estos bichos molestos mientras evitas sus movimientos impredecibles. Sin embargo, tienes un tiempo límite, y tu única manera de sobrevivir es escapar a la esfera de escape.</li>
-<li>Entrada al MCP (Control Maestro del Programa):
+        En el emocionante minijuego de &quot;Motos de Luz&quot;, los jugadores se suben a las icónicas motos de luz y compiten en una carrera mortal. Esquiva los obstáculos que se encuentran en la pista y planifica tus movimientos con cuidado para cortarles el paso. La velocidad y la agilidad son esenciales para sobrevivir y ser el último en pie en la cuadrícula digital.</li>
+        <li>Tanques de Luz: El minijuego de &quot;Tanques&quot; te sumerge en un enfrentamiento de alta tecnología. Controla un tanque futurista y utiliza proyectiles láser para destruir a tus oponentes. la estrategia es crucial mientras te abres paso a través de la cuadrícula digital, disparando a los enemigos y evitando sus ataques. </li>
+        <li>Caza de Gridbugs:
+        En el minijuego de &quot;Caza de Gridbugs&quot;, te embarcarás en una misión para eliminar a las plagas digitales conocidas como gridbugs. Estas criaturas digitales se mueven y multiplican rápidamente y representan una amenaza para la estabilidad de la cuadrícula. Utiliza tus habilidades de caza y captura a estos bichos molestos mientras evitas sus movimientos impredecibles. Sin embargo, tienes un tiempo límite, y tu única manera de sobrevivir es escapar a la esfera de escape.</li>
+        <li>Entrada al MCP (Control Maestro del Programa):
 
-En este emocionante minijuego, los jugadores se enfrentarán al desafío definitivo: penetrar en el corazón mismo del sistema, el Control Maestro del Programa (MCP). La misión es infiltrarse en este centro neurálgico digital y desactivar sus defensas. Sin embargo, este tiene defensas, paredes reforzadas las cuales solo pueden ser destruidas con tu arma. </li>
+        En este emocionante minijuego, los jugadores se enfrentarán al desafío definitivo: penetrar en el corazón mismo del sistema, el Control Maestro del Programa (MCP). La misión es infiltrarse en este centro neurálgico digital y desactivar sus defensas. Sin embargo, este tiene defensas, paredes reforzadas las cuales solo pueden ser destruidas con tu arma. </li>
       </ul>
     ),
   },
   {
     title: "Certifications",
     id: "certifications",
-    images: [
-      {
-        src: "/image/certifications-image1.png",
-        alt: "Certifications Imagen 1",
-        width: 400,
-        height: 400,
-      },
-      {
-        src: "/image/certifications-image2.png",
-        alt: "Certifications Imagen 2",
-        width: 400,
-        height: 400,
-      },
-    ],
     content: (
       <ul className="list-disc pl-2">
         <li>Motor de Juego Unity: Unity es el motor de juego utilizado para desarrollar &quot;TRON REMAKE&quot;. Es conocido por su versatilidad y capacidad para crear gráficos 3D impresionantes, lo que lo convierte en una elección popular para desarrolladores de juegos.</li>
@@ -103,17 +67,11 @@ const AboutSection = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="image-container">
-          {TAB_DATA.find((t) => t.id === tab).images.map((image, index) => (
-            <div key={index}>
-              <Image src={image.src} alt={image.alt} width={image.width} height={image.height} />
-            </div>
-          ))}
-        </div>
+        <Image src="/image/about-image.png" width={900} height={900} alt="ugh" className=""/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            TRON REMAKE es una reinvención completa del clásico juego de arcade inspirado en el icónico mundo de Tron. Sumérgete en una experiencia retrofuturista en la que las batallas de motos de luz, los enfrentamientos de tanques, la estrategia en las torres I/O y la caza de gridbugs son la clave para la victoria en una cuadrícula digital mortal.
+        TRON REMAKE es una reinvención completa del clásico juego de arcade inspirado en el icónico mundo de Tron. Sumérgete en una experiencia retrofuturista en la que las batallas de motos de luz, los enfrentamientos de tanques, la estrategia en las torres I/O y la caza de gridbugs son la clave para la victoria en una cuadrícula digital mortal.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -121,7 +79,7 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Características{" "}
+              Caracteríasticas{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
