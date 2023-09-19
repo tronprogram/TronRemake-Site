@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'TRON';
+    src: url('tron.woff') format('woff');
+  }
+.tron-font{
+    font-family:'TRON',sans-serif;
+}

@@ -25,9 +25,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-@font-face {
-  font-family: 'CustomFont';
-  src: url('../../public/image/tron.woff2') format('woff2'), /* Ruta a tu archivo .woff2 */
-       url('../../public/image/tron.woff') format('woff');    /* Ruta a tu archivo .woff */
-  /* Otros atributos de fuente como font-weight, font-style, etc., si es necesario */
-}
