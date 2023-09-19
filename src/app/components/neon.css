@@ -1,7 +1,7 @@
 /* Definición de variables de colores */
 @font-face {
     font-family: 'TRON';
-    src: url('tron.woff') format('woff');
+    src: url('/tron.woff') format('woff');
   }
 :root {
     /* Base font size */
