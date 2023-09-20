@@ -16,17 +16,7 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-4 items-center"> {/* Alinea verticalmente */}
             <li>
-              <Link href="/">
-                <div className="text-white cursor-pointer">Inicio</div>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                <div className="text-white cursor-pointer">Acerca de</div>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact">
+              <Link href="https://team-tbd.itch.io/tron-remake">
                 <div className="ml-4">
                   <button className='px-6 py-3 rounded-full text-white bg-gradient-to-br from-teal-700 via-green-400 to-teal-900 hover:bg-slate-400 w-full sm:w-fit'>
                     Descarga Ahora!

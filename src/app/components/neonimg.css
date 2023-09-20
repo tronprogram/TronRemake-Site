@@ -1,0 +1,12 @@
+.neon-border {
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 
+      0 0 .2rem #fff,
+      0 0 .2rem #fff,
+      0 0 2rem #13fea0,
+      0 0 0.8rem #04bda4,
+      0 0 2.8rem #13feb4,
+      inset 0 0 1.3rem #13fecb;
+  }

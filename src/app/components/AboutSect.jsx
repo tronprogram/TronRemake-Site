@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import './neonimg.css';
 
 const TAB_DATA = [
   {
@@ -13,13 +14,8 @@ const TAB_DATA = [
         alt: "Skills Imagen 1",
         width: 900,
         height: 900,
-      },
-      {
-        src: "/image/skills-image2.png",
-        alt: "Skills Imagen 2",
-        width: 400,
-        height: 400,
-      },
+        
+      }
     ],
     content: (
       <ul className="list-disc pl-2">
@@ -36,8 +32,26 @@ const TAB_DATA = [
     id: "education",
     images: [
       {
-        src: "/image/education-image1.png",
+        src: "/image/cycle.png",
         alt: "Education Imagen 1",
+        width: 400,
+        height: 400,
+      },
+      {
+        src: "/image/tank.png",
+        alt: "Education Imagen 2",
+        width: 400,
+        height: 400,
+      },
+      {
+        src: "/image/gbug.png",
+        alt: "Education Imagen 3",
+        width: 400,
+        height: 400,
+      },
+      {
+        src: "/image/mcp.png",
+        alt: "Education Imagen 4",
         width: 400,
         height: 400,
       },
@@ -61,14 +75,26 @@ En este emocionante minijuego, los jugadores se enfrentarán al desafío definit
     id: "certifications",
     images: [
       {
-        src: "/image/certifications-image1.png",
+        src: "/image/unity.png",
         alt: "Certifications Imagen 1",
+        width: 600,
+        height: 400,
+      },
+      {
+        src: "/image/arduino.png",
+        alt: "Certifications Imagen 2",
         width: 400,
         height: 400,
       },
       {
-        src: "/image/certifications-image2.png",
-        alt: "Certifications Imagen 2",
+        src: "/image/python.png",
+        alt: "Certifications Imagen 3",
+        width: 400,
+        height: 400,
+      },
+      {
+        src: "/image/csharp.png",
+        alt: "Certifications Imagen 4",
         width: 400,
         height: 400,
       },
@@ -99,19 +125,44 @@ const AboutSection = () => {
       setTab(id);
     });
   };
-
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <div className="image-container">
-          {TAB_DATA.find((t) => t.id === tab).images.map((image, index) => (
-            <div key={index}>
-              <Image src={image.src} alt={image.alt} width={image.width} height={image.height} />
+          {tab === "skills" && (
+            <div className="flex p-10 justify-center">
+              {/* Imagen de Skills */}
+              <Image
+                src="/image/about-image.png"
+                alt="Skills Imagen 1"
+                width={900}
+                height={900}
+                className="neon-border"
+              />
             </div>
-          ))}
+          )}
+
+          {(tab === "education" || tab === "certifications") && (
+            <div className="grid grid-cols-2 gap-8">
+              {TAB_DATA
+                .find((t) => t.id === tab)
+                .images.slice(0, 4) // Obtener las primeras 4 imágenes
+                .map((image, index) => (
+                  <div key={index} className="flex p-10 justify-center">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={400}
+                      height={400}
+                      className="neon-border"
+                    />
+                  </div>
+                ))}
+            </div>
+          )}
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Acerca del juego</h2>
           <p className="text-base lg:text-lg">
             TRON REMAKE es una reinvención completa del clásico juego de arcade inspirado en el icónico mundo de Tron. Sumérgete en una experiencia retrofuturista en la que las batallas de motos de luz, los enfrentamientos de tanques, la estrategia en las torres I/O y la caza de gridbugs son la clave para la victoria en una cuadrícula digital mortal.
           </p>

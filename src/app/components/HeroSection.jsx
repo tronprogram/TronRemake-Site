@@ -12,7 +12,9 @@ const HeroSection = () => {
                   </h1>
                 <p className='text-[#b4b4b4] text-base sm:text-lg mb-6 lg:text-xl'><span className=''>{"TRON REMAKE"} </span>es un juego realizado por el equipo Team TBD en la técnica de programación del SENA grado 11 del colegio Carlos Vicente Rey.</p>
                 <div>
+                  <a href='https://team-tbd.itch.io/tron-remake'>
                   <button className='px-6 py-3 rounded-full mr-4 text-white bg-gradient-to-br from-teal-700 via-green-400 to-teal-900 hover:bg-slate-400 w-full sm:w-fit'>Descarga Ahora!</button>
+                  </a>
                 </div>
             </div>
             <div className='col-span-5 place-self-center mt-4 lg:mt-0'>

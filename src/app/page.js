@@ -2,6 +2,8 @@ import Image from 'next/image';
 import HeroSection from './components/HeroSection';
 import Header from './components/Header';
 import AboutSection from './components/AboutSect';
+import Footer from './components/Footer';
+
 export default function Home() {
   const gradientBackground = {
     backgroundImage: 'linear-gradient(45deg, #1d1a1f, #29212f)',
@@ -18,6 +20,7 @@ export default function Home() {
       <div>
         <AboutSection/>
       </div>
+      <Footer></Footer>
     </main>
   );
 }
